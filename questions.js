@@ -15,11 +15,9 @@ class Question{
         this.name.hide()
         this.button.hide()
         this.answer.hide()
-        this.option1.hide()
-        this.option2.hide()
+
         this.title.hide()
         this.button.hide()
-        this.question.hide()
         
     }
 

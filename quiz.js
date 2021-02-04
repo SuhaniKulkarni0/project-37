@@ -32,7 +32,12 @@ class Quiz{
         question.hide()
 
         background("lightblue")
-        textSize(20)
+        textSize(15)
+        fill("black")
+        
+        text("The contestants who answered correct are highlighted in green", 100,220)
+
+        textSize(25)
         fill("black")
         text("Results of the Quiz", 340,50)
         Contestant.getContestantInfo()
@@ -53,9 +58,11 @@ class Quiz{
                 else{
                     fill("red")
                 }
-                displayAnswer = displayAnswer + 40
-                text(allContestants[plr].name + ":" + allContestants[plr].answer, 270,displayAnswer)
+                
             }
+            
+                text(allContestants[plr].name + ":" + allContestants[plr].answer, 270,displayAnswer)
+                displayAnswer = displayAnswer + 40
             
         }
 }
